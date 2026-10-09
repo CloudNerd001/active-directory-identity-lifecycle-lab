@@ -34,3 +34,5 @@ topics such as SSO and MFA (covered in later study).
 
 ## Status
 Day 1: folder structure, glossary and company definition complete.
+## Status
+Day 2: protocol flows drawn for OAuth 2.0, OIDC, SAML and SCIM. Today's flows show how each protocol moves identity between the user, identity provider, application and resource. This gives me the map I need to decide which protocol handles sign-in, access and account provisioning when I build the AD lab.

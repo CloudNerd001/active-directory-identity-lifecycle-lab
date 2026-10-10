@@ -1,6 +1,6 @@
 # Protocol Flows
 
-How identity protocols move information between the user, the identity provider (IdP), the application (service provider) and the resource, using Funsho Technologies as the example.
+How identity protocols move information between the user, the identity provider (IdP), the application (service provider) and the resource, using National Identity Management Agency (NIMA) as the example.
 
 ## Overview: four boxes
 Authentication proves who the user is. Authorization decides what they can reach.
@@ -87,4 +87,4 @@ sequenceDiagram
 ```
 
 ## How this supports the lab
-Funsho's directory will hold the identities. SAML, OIDC and OAuth control how those identities reach apps, and SCIM keeps accounts in step as people join, change roles and leave.
+NIMA's directory will hold the identities. SAML, OIDC and OAuth control how those identities reach apps, and SCIM keeps accounts in step as people join, change roles and leave.

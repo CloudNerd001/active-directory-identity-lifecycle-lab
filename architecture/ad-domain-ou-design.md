@@ -9,7 +9,7 @@ Design for the NIMA lab environment. This is a single-forest, single-domain setu
 | **Forest** | `adlab.test` (one forest) |
 | **Domain** | `adlab.test` (one domain, the forest root) |
 | **NetBIOS name** | `ADLAB` |
-| **Domain controller** | `NIMA-DC01` (also runs DNS) |
+| **Domain controller** | `NIMA-DC0101` (also runs DNS) |
 | **File server (planned)** | `NIMA-FS01` |
 | **Why one domain** | A lab this size needs no extra domains. Fewer moving parts keep the build simple. |
 
@@ -63,7 +63,7 @@ Each group maps to **one folder or one administrative responsibility**.
 ## Naming Conventions
 - Groups: `GRP-<Area>-<Purpose>`
 - Service accounts: `svc-<application>`
-- Computers: `NIMA-<role><number>` (for example `NIMA-DC01`)
+- Computers: `NIMA-<role><number>` (for example `NIMA-DC0101`)
 
 ## Design Decisions
 - **Users and groups are separated** so access is granted through groups, never directly to people (least privilege).

@@ -6,7 +6,7 @@ flowchart TB
     VB[VirtualBox]
   end
   subgraph Net["Isolated network adlab-net, 192.168.50.0/24, no internet"]
-    DC["NIMA-DC01 (planned DC and DNS)"]
+    DC["NIMA-DC0101 (planned DC and DNS)"]
     FS["NIMA-FS01 (planned file server)"]
     WS["Test workstation (planned)"]
   end

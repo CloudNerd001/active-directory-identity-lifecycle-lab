@@ -21,7 +21,7 @@ Plan for the local Windows Server evaluation VM and isolated network used in the
 ## VM Specification
 | Item | Value |
 |---|---|
-| Name | `NIMA-DC01` |
+| Name | `NIMA-DC0101` |
 | Role (planned) | Domain controller and DNS for `adlab.test` |
 | OS | Windows Server (evaluation) |
 | vCPUs | 2 |
@@ -35,16 +35,16 @@ Plan for the local Windows Server evaluation VM and isolated network used in the
 | Type | VirtualBox Internal Network (`adlab-net`) |
 | Isolation | No NAT or bridged adapter, so no internet and no access to the host |
 | Subnet | 192.168.50.0/24 |
-| NIMA-DC01 | 192.168.50.10 (static) |
+| NIMA-DC0101 | 192.168.50.10 (static) |
 | NIMA-FS01 (planned) | 192.168.50.11 (static) |
 | Test workstation (planned) | 192.168.50.20 (static) |
-| DNS | NIMA-DC01 (192.168.50.10) |
+| DNS | NIMA-DC0101 (192.168.50.10) |
 | Trade-off | The VM cannot reach Windows Update, which is acceptable for a short-lived lab |
 
 ## Build Commands Used
 ```
-VBoxManage createvm --name NIMA-DC01 --ostype Windows2022_64 --register
-VBoxManage modifyvm NIMA-DC01 --memory 4096 --cpus 2 --vram 16 --nic1 intnet --intnet1 adlab-net
+VBoxManage createvm --name NIMA-DC0101 --ostype Windows2022_64 --register
+VBoxManage modifyvm NIMA-DC0101 --memory 4096 --cpus 2 --vram 16 --nic1 intnet --intnet1 adlab-net
 (disk creation, storage controller and ISO attach commands as run)
 ```
 

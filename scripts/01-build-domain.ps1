@@ -1,6 +1,6 @@
 <#
 .SYNOPSIS
-    Stub: build the adlab.test domain on NIMA-DC01.
+    Stub: build the adlab.test domain on NIMA-DC0101.
 .NOTES
     Not yet run. Run only on the lab VM, never on the host.
 #>
